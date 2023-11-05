@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestión de Empleados</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Gestión de Empleados</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Empleados</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Departamentos</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Agregar Empleado</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre del empleado">
+                        </div>
+                        <div class="form-group">
+                            <label for="puesto">Puesto</label>
+                            <input type="text" class="form-control" id="puesto" placeholder="Ingrese el puesto del empleado">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agregar Empleado</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h2>Listado de Empleados</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Puesto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Juan Pérez</td>
+                                <td>Desarrollador Web</td>
+                            </tr>
+                            <tr>
+                                <td>María López</td>
+                                <td>Gerente de Proyecto</td>
+                            </tr>
+                            <!-- Puedes agregar más filas con empleados aquí -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
